@@ -1,20 +1,20 @@
-?- leash(-all), trace, requires(visionlab, driver).
-   Call: (13) requires(visionlab, driver)
-   Call: (14) depends_on(visionlab, driver)
-   Fail: (14) depends_on(visionlab, driver)
-   Redo: (13) requires(visionlab, driver)
-   Call: (14) depends_on(visionlab, _8376)
-   Exit: (14) depends_on(visionlab, pytorch)
-   Call: (14) requires(pytorch, driver)
-   Call: (15) depends_on(pytorch, driver)
-   Fail: (15) depends_on(pytorch, driver)
-   Redo: (14) requires(pytorch, driver)
-   Call: (15) depends_on(pytorch, _13700)
-   Exit: (15) depends_on(pytorch, cuda)
-   Call: (15) requires(cuda, driver)
-   Call: (16) depends_on(cuda, driver)
-   Exit: (16) depends_on(cuda, driver)
-   Exit: (15) requires(cuda, driver)
-   Exit: (14) requires(pytorch, driver)
-   Exit: (13) requires(visionlab, driver)
-true.
+?- trace, requires(visionapp, driver).
+   Call: (13) requires(visionapp, driver) ? creep
+   Call: (14) depends_on(visionapp, driver) ? creep
+   Fail: (14) depends_on(visionapp, driver) ? creep
+   Redo: (13) requires(visionapp, driver) ? creep
+   Call: (14) depends_on(visionapp, _48628) ? creep
+   Exit: (14) depends_on(visionapp, pytorch) ? creep
+   Call: (14) requires(pytorch, driver) ? creep
+   Call: (15) depends_on(pytorch, driver) ? creep
+   Fail: (15) depends_on(pytorch, driver) ? creep
+   Redo: (14) requires(pytorch, driver) ? creep
+   Call: (15) depends_on(pytorch, _53952) ? creep
+   Exit: (15) depends_on(pytorch, cuda) ? creep
+   Call: (15) requires(cuda, driver) ? creep
+   Call: (16) depends_on(cuda, driver) ? creep
+   Exit: (16) depends_on(cuda, driver) ? creep
+   Exit: (15) requires(cuda, driver) ? creep
+   Exit: (14) requires(pytorch, driver) ? creep
+   Exit: (13) requires(visionapp, driver) ? creep
+true 

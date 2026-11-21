@@ -2,5 +2,7 @@
 ./vscode
 *.code-workspace
 
-# Prolog
-
+# Submission Stuff
+*.zip
+*.docx
+./meow_assignment2
